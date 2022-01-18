@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Keil\Labware\Lab10_TrafficLight\Lab10.uvproj
+Project File Date:  02/11/2014
+
+<h2>Output:</h2>
+Build target 'Lab10'
+compiling TableTrafficLight.c...
+linking...
+Program Size: Code=4568 RO-data=14296 RW-data=640 ZI-data=1752  
+".\Lab10.axf" - 0 Error(s), 0 Warning(s).
+ GO_SOUTH, GO_WALK, GO_WALK, GO_SOUTH, GO_SOUTH}},    // state 1
+TableTrafficLight.c(69): error:  #67: expected a "}"
+        {SOUTH_GREEN, WALK_RED, 1000, {GO_SOUTH,        WAIT_SOUTH, GO_SOUTH, WAIT_SOUTH, WAIT_SOUTH,   WAIT_SOUTH,     WAIT_SOUTH,     WAIT_SOUTH}}, // state 2
+TableTrafficLight.c(70): error:  #67: expected a "}"
+        {SOUTH_YELLOW, WALK_RED, 500, {GO_WEST, GO_WEST, GO_WEST, GO_WEST, GO_WALK, GO_WALK, GO_WALK, GO_WALK}}, // state 3
+TableTrafficLight.c(71): error:  #67: expected a "}"
+        {BOTH_RED, WALK_GREEN, 1000, {GO_WALK, HURRY_UP1, HURRY_UP1, HURRY_UP1, GO_WALK, HURRY_UP1, HURRY_UP1,  HURRY_UP1}}, // state 4
+TableTrafficLight.c(72): error:  #67: expected a "}"
+        {BOTH_RED, WALK_OFF, 500, {HURRY_UP2, HURRY_UP2, HURRY_UP2, HURRY_UP2, HURRY_UP2, HURRY_UP2, HURRY_UP2, HURRY_UP2}}, // state 5
+TableTrafficLight.c(73): error:  #67: expected a "}"
+        {BOTH_RED, WALK_RED, 500, {HURRY_UP3, HURRY_UP3, HURRY_UP3, HURRY_UP3, HURRY_UP3, HURRY_UP3, HURRY_UP3, HURRY_UP3}}, // state 6
+TableTrafficLight.c(74): error:  #67: expected a "}"
+        {BOTH_RED, WALK_OFF, 500, {HURRY_UP4, HURRY_UP4, HURRY_UP4, HURRY_UP4, HURRY_UP4, HURRY_UP4, HURRY_UP4, HURRY_UP4}}, // state 7
+TableTrafficLight.c(75): error:  #67: expected a "}"
+        {BOTH_RED, WALK_RED, 500, {HURRY_UP5, HURRY_UP5, HURRY_UP5, HURRY_UP5, HURRY_UP5, HURRY_UP5, HURRY_UP5, HURRY_UP5}}, // state 8
+TableTrafficLight.c(76): error:  #67: expected a "}"
+        {BOTH_RED, WALK_OFF, 500, {HURRY_UP6, HURRY_UP6, HURRY_UP6, HURRY_UP6, HURRY_UP6, HURRY_UP6, HURRY_UP6, HURRY_UP6}}, // state 9
+TableTrafficLight.c(77): error:  #67: expected a "}"
+        {BOTH_RED, WALK_RED, 500, {HURRY_UP7, HURRY_UP7, HURRY_UP7, HURRY_UP7, HURRY_UP7, HURRY_UP7, HURRY_UP7, HURRY_UP7}}, // state 10
+TableTrafficLight.c(78): error:  #67: expected a "}"
+        {BOTH_RED, WALK_OFF, 500, {DONT_WALK, DONT_WALK, DONT_WALK, DONT_WALK, DONT_WALK, DONT_WALK, DONT_WALK, DONT_WALK}}, // state 11
+TableTrafficLight.c(79): error:  #67: expected a "}"
+        {BOTH_RED, WALK_RED, 500, {GO_WEST, GO_WEST, GO_SOUTH, GO_WEST, GO_WEST, GO_WEST, GO_SOUTH, GO_WEST}} // state 12
+TableTrafficLight.c: 0 warnings, 12 errors
+".\Lab10.axf" - 12 Error(s), 0 Warning(s).
+Target not created
+T, GO_WEST, GO_SOUTH, GO_WEST, GO_WEST, GO_WEST, GO_SOUTH, GO_WEST}} // state 12
+TableTrafficLight.c: 0 warnings, 13 errors
+".\Lab10.axf" - 13 Error(s), 0 Warning(s).
+Target not created
+bleTrafficLight.c(184): error:  #20: identifier "i" is undefined
+        for (int i = 0; i < delay; i++) {
+TableTrafficLight.c: 0 warnings, 15 errors
+".\Lab10.axf" - 15 Error(s), 0 Warning(s).
+Target not created
+on PortB_Init - give arg types
+  void PortB_Init();
+TableTrafficLight.c(93): warning:  #1295-D: Deprecated declaration SysTick_Init - give arg types
+  void SysTick_Init();
+TableTrafficLight.c(184): error:  #29: expected an expression
+        for (int i = 0; i < delay; i++) {
+TableTrafficLight.c(184): error:  #20: identifier "i" is undefined
+        for (int i = 0; i < delay; i++) {
+TableTrafficLight.c: 4 warnings, 15 errors
+".\Lab10.axf" - 15 Error(s), 4 Warning(s).
+Target not created
