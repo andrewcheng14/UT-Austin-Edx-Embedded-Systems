@@ -103,7 +103,7 @@ int main(void){
 	unsigned long s;
 	unsigned long input;
 	
-  TExaS_Init(SW_PIN_PE210, LED_PIN_PB543210,ScopeOff); // activate grader and set system clock to 80 MHz
+  	TExaS_Init(SW_PIN_PE210, LED_PIN_PB543210,ScopeOff); // activate grader and set system clock to 80 MHz
 	
 	// Initialize ports and SysTick Timer
 	PortE_Init();
@@ -111,24 +111,24 @@ int main(void){
 	PortB_Init();
 	SysTick_Init();
   
-  EnableInterrupts();
+ 	EnableInterrupts();
 	
 	// set initial state
 	s = GO_WEST;
-  while(1){
+	while(1){
 		// 1. Perform output
 		TRAFFIC_LIGHTS = FSM[s].Traffic_Lights_Output;
 		WALK_LIGHTS = FSM[s].Walk_Lights_Output;
-		
+
 		// 2. Wait
 		SysTick_Wait10ms(FSM[s].Time);
-		
+
 		// 3. Input
 		input = SENSORS;
-		
+
 		// 4. Go to next state (depends on current state and input)
 		s = FSM[s].Next[input];
-  }
+	}
 }
 
 void PortE_Init() { volatile unsigned long delay;
